@@ -40,10 +40,11 @@ Replace `"path_to_your_video.mp4"` with the path to your video file and `"path_t
 ## Example
 
 ```bash
-python VideotoFrames.py --video_path "C:/Users/updeus/Desktop/testVideo.mp4" --output_folder "C:/Users/updeus/Desktop/Output"
+python VideotoFrames.py --video_path r'C:\Users\updeus\Downloads\testVideo.mp4' --output_folder r'C:\Users\updeus\Desktop\Output'
 ```
+This command will extract frames from `testVideo.mp4` and save them to `C:\Users\updeus\Desktop\Output`.
 
-This command will extract frames from `testVideo.mp4` and save them to `C:/Users/updeus/Desktop/Output`.
+Make sure to Prefix the directory location with an r to create a raw string, which tells Python to ignore escape sequences within the string.
 
 ## Troubleshooting
 
